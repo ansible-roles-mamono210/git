@@ -5,8 +5,7 @@
 
   tasks:
     - name: Check whether Git is installed
-      ansible.builtin.shell: |
-        git --version
+      ansible.builtin.command: git --version  # noqa command-instead-of-module
       register: git_installed
       changed_when: false
 
