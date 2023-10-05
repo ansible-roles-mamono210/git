@@ -3,7 +3,7 @@
 Role Description
 =========
 
-Installs git for CentOS7.
+Installs git for CentOS Stream.
 
 Requirements
 ------------

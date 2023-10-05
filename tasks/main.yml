@@ -1,14 +1,5 @@
 ---
-- name: Install Git on CentOS 7
-  ansible.builtin.include_tasks:
-    file: centos7.yml
-  when:
-    - ansible_distribution == "CentOS"
-    - ansible_distribution_major_version == "7"
-
-- name: Install Git on CentOS Stream 8
-  ansible.builtin.include_tasks:
-    file: centos-stream-8.yml
-  when:
-    - ansible_distribution == "CentOS"
-    - ansible_distribution_major_version == "8"
+- name: Install Git
+  ansible.builtin.package:
+    name: git
+    state: present
