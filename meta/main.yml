@@ -1,15 +1,14 @@
 ---
+dependencies: []
 galaxy_info:
   role_name: git
   author: mamono210
-  description: Install git
+  description: Install git for Linux.
   company: no name
   license: "license (BSD, MIT)"
-  min_ansible_version: 8.0.0
+  min_ansible_version: 10.0.1
   platforms:
     - name: EL
       release:
-        - 8
         - 9
   galaxy_tags: []
-dependencies: []
